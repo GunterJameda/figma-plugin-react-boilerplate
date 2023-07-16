@@ -1,0 +1,21 @@
+.button {
+  padding: 8px 12px;
+  line-height: 16px;
+  border-radius: 5px;
+  color: var(--figma-color-text-onbrand);
+  background-color: var(--figma-color-bg-brand);
+  font-weight: 700;
+  transition: background-color ease-out 120ms;
+}
+
+.button:hover:not(.disabled) {
+  background-color: var(--figma-color-bg-brand-hover);
+}
+
+.button:active:not(.disabled) {
+  background-color: var(--figma-color-bg-brand-pressed);
+}
+
+.button.disabled {
+  background-color: var(--figma-color-bg-disabled-secondary);
+}

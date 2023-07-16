@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  align-items: center;
+  width: calc(100% + 8px + 8px);
+  height: 32px;
+  box-sizing: border-box;
+  margin-left: -8px;
+  margin-right: -8px;
+  z-index: 1;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  min-width: 0;
+  width: 100%;
+  height: 28px;
+
+  padding: 0 4px 0 7px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  background-color: transparent;
+
+  border: 1px solid transparent;
+  border-radius: 2px;
+
+  color: var(--figma-color-text);
+  fill: var(--figma-color-icon);
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.input:hover {
+  border: 1px solid var(--figma-color-border);
+}
+
+.input:hover .inputText {
+  flex-grow: 1;
+}
+
+.input:hover .chevronContainer {
+  color: var(--figma-color-icon);
+  fill: var(--figma-color-icon);
+}
+
+.inputText {
+  max-width: calc(100% - 12px);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chevronContainer {
+  width: 16px;
+  flex: 0 0 16px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: var(--figma-color-icon-tertiary);
+  fill: var(--figma-color-icon-tertiary);
+}
+
+.dropdownOptionsContainer {
+  background-color: var(--color-bg-menu);
+
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+  border-radius: 2px;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  z-index: 2;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  scrollbar-width: none;
+}
+
+.menuItem {
+  height: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex: 0 0 24px;
+  line-height: 24px;
+  fill: var(--figma-color-text-oncomponent);
+  color: var(--figma-color-text-oncomponent);
+  cursor: default;
+  text-decoration: none;
+  text-align: left;
+  white-space: nowrap;
+
+  padding: 0;
+  width: 100%;
+}
+
+.menuItem:hover {
+  background-color: var(--figma-color-bg-brand);
+}
+
+.checkContainer {
+  width: 18px;
+  padding-left: 8px;
+  padding-right: 6px;
+  flex-shrink: 0;
+  fill: inherit;
+}
+
+.label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 8px;
+  text-align: left;
+  color: inherit;
+  font-weight: 600;
+}

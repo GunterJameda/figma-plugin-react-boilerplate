@@ -1,0 +1,29 @@
+.button {
+  padding: 4px;
+  line-height: 16px;
+  border-radius: 2px;
+  background-color: var(--figma-color-bg);
+  transition: background-color ease-out 120ms;
+}
+
+.button:hover:not(.disabled) {
+  background-color: var(--figma-color-bg-secondary);
+}
+
+.button:active:not(.disabled) {
+  background-color: var(--figma-color-bg-secondary);
+}
+
+.button.selected:not(.disabled) {
+  background-color: var(--figma-color-bg-tertiary);
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
+  fill: var(--figma-color-icon);
+}
+
+.button.disabled .icon {
+  fill: var(--figma-color-icon-disabled);
+}

@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  align-items: center;
+  color: var(--figma-color-text);
+  fill: var(--figma-color-icon);
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  height: 28px;
+  border: 1px solid transparent;
+  position: relative;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 144px;
+}
+
+.container.disabled {
+  pointer-events: none;
+}
+
+.container:hover {
+  border: 1px solid var(--figma-color-border);
+}
+
+.container:focus-within .opacityLabel::before,
+.container:hover .opacityLabel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  width: 1px;
+  background-color: var(--figma-color-border);
+}
+
+.container:focus-within {
+  height: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 1px solid var(--figma-color-border-selected);
+  outline: 1px solid var(--figma-color-border-selected);
+  outline-offset: -2px;
+}
+
+.chitContainer {
+  margin: 8px 0 8px 7px;
+}
+
+.colorInput {
+  flex: 1 0 72px;
+  color: var(--figma-color-text);
+  fill: var(--figma-color-icon);
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  background-color: transparent;
+  width: 100%;
+  padding: 0 0 0 7px;
+  height: 28px;
+  border: 1px solid transparent;
+  min-width: 0;
+  outline: none;
+}
+
+.container.disabled .colorInput {
+  color: var(--figma-color-text-disabled);
+}
+
+.opacityLabel {
+  flex: 0 0 48px;
+  border: 1px solid transparent;
+  margin-right: 0;
+  position: relative;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  margin: 1px 0;
+  box-sizing: border-box;
+}
+
+.opacityInput {
+  color: var(--figma-color-text);
+  fill: var(--figma-color-icon);
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  background-color: transparent;
+  width: 100%;
+  padding: 0 0 0 7px;
+  height: 28px;
+  border: 1px solid transparent;
+  min-width: 0;
+  outline: none;
+}
+
+.container.disabled .opacityInput {
+  color: var(--figma-color-text-disabled);
+}

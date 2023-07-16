@@ -1,0 +1,28 @@
+.switchContainer {
+  box-sizing: border-box;
+  height: 12px;
+  width: 24px;
+  border-radius: 12px;
+  background-color: var(--figma-color-bg-disabled-secondary);
+  position: relative;
+  transition: ease-out background-color 120ms;
+}
+
+.switchContainer.activated {
+  background-color: var(--figma-color-bg-brand);
+}
+
+.switchController {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: #ffffff; /* not tokenized on purpose */
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: ease-out left 120ms;
+}
+
+.switchContainer.activated .switchController {
+  left: 13px;
+}
