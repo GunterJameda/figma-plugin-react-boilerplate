@@ -1,0 +1,16 @@
+<svg
+  className="svg"
+  width="16"
+  height="16"
+  viewBox="0 0 16 16"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    style="fill: inherit;"
+    d="M13.207 5.207L7 11.414 3.292 7.707l1.415-1.414L7 8.586l4.793-4.793 1.414 1.414z"
+    fill-rule="nonzero"
+    fill-opacity="1"
+    fill="#000"
+    stroke="none"
+  ></path>
+</svg>
